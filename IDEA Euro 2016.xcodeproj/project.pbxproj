@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F9D5351D6CA94F00C3A727 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07F9D5341D6CA94F00C3A727 /* GoogleService-Info.plist */; };
+		0D0DB15349C623E33C7460EE /* Pods_IDEA_Euro_2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64282008C7492ECFC2B1E36 /* Pods_IDEA_Euro_2016.framework */; };
 		FFD576801CFFD46F009CD8BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD5767F1CFFD46F009CD8BF /* AppDelegate.swift */; };
 		FFD576821CFFD46F009CD8BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD576811CFFD46F009CD8BF /* ViewController.swift */; };
 		FFD576951CFFD4B3009CD8BF /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD576931CFFD4B3009CD8BF /* LoadingState.swift */; };
@@ -25,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F9D5341D6CA94F00C3A727 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BCC8D55658433954C832528 /* Pods-IDEA Euro 2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDEA Euro 2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IDEA Euro 2016/Pods-IDEA Euro 2016.debug.xcconfig"; sourceTree = "<group>"; };
+		482768D76DA63B30FD566AF7 /* Pods-IDEA Euro 2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDEA Euro 2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-IDEA Euro 2016/Pods-IDEA Euro 2016.release.xcconfig"; sourceTree = "<group>"; };
+		D64282008C7492ECFC2B1E36 /* Pods_IDEA_Euro_2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDEA_Euro_2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD5767C1CFFD46F009CD8BF /* IDEA Euro 2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IDEA Euro 2016.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD5767F1CFFD46F009CD8BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFD576811CFFD46F009CD8BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0DB15349C623E33C7460EE /* Pods_IDEA_Euro_2016.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE3AF9039A8F4113A9219A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D64282008C7492ECFC2B1E36 /* Pods_IDEA_Euro_2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14EA450F6034EDEB2BEC6ED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BCC8D55658433954C832528 /* Pods-IDEA Euro 2016.debug.xcconfig */,
+				482768D76DA63B30FD566AF7 /* Pods-IDEA Euro 2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FFD576731CFFD46F009CD8BF = {
 			isa = PBXGroup;
 			children = (
 				FFD5767E1CFFD46F009CD8BF /* IDEA Euro 2016 */,
 				FFD5767D1CFFD46F009CD8BF /* Products */,
+				14EA450F6034EDEB2BEC6ED1 /* Pods */,
+				0FE3AF9039A8F4113A9219A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +100,7 @@
 		FFD5767E1CFFD46F009CD8BF /* IDEA Euro 2016 */ = {
 			isa = PBXGroup;
 			children = (
+				07F9D5341D6CA94F00C3A727 /* GoogleService-Info.plist */,
 				FFD576AB1CFFD659009CD8BF /* Cells */,
 				FFD576A61CFFD60B009CD8BF /* Models */,
 				FFD5769D1CFFD52A009CD8BF /* Controllers */,
@@ -141,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFD5768E1CFFD46F009CD8BF /* Build configuration list for PBXNativeTarget "IDEA Euro 2016" */;
 			buildPhases = (
+				AB39E078F7018546BD9E5A06 /* [CP] Check Pods Manifest.lock */,
 				FFD576781CFFD46F009CD8BF /* Sources */,
 				FFD576791CFFD46F009CD8BF /* Frameworks */,
 				FFD5767A1CFFD46F009CD8BF /* Resources */,
+				ED6C7D4BB97E0BF60BE7B1B5 /* [CP] Embed Pods Frameworks */,
+				11284B305804D4DEA20BEB3F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,12 +223,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD5769A1CFFD4CA009CD8BF /* Main.storyboard in Resources */,
+				07F9D5351D6CA94F00C3A727 /* GoogleService-Info.plist in Resources */,
 				FFD5769C1CFFD4F3009CD8BF /* Assets.xcassets in Resources */,
 				FFD576991CFFD4CA009CD8BF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11284B305804D4DEA20BEB3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDEA Euro 2016/Pods-IDEA Euro 2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB39E078F7018546BD9E5A06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6C7D4BB97E0BF60BE7B1B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IDEA Euro 2016/Pods-IDEA Euro 2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FFD576781CFFD46F009CD8BF /* Sources */ = {
@@ -308,6 +387,7 @@
 		};
 		FFD5768F1CFFD46F009CD8BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BCC8D55658433954C832528 /* Pods-IDEA Euro 2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Euro;
 				INFOPLIST_FILE = "IDEA Euro 2016/Info.plist";
@@ -320,6 +400,7 @@
 		};
 		FFD576901CFFD46F009CD8BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482768D76DA63B30FD566AF7 /* Pods-IDEA Euro 2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Euro;
 				INFOPLIST_FILE = "IDEA Euro 2016/Info.plist";
